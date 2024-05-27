@@ -1,0 +1,33 @@
+<!DOCTYPE html>                 
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Darkness</title>
+        <link href="{{ url_for('static', filename='labyrinth.css') }}" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="{{ url_for('index') }}">Darkness</a></h1>
+            {% if g.user %}
+                <p>Hi, {{ g.user }}</p>
+                <p><a href="{{ url_for('logout') }}">Logout</a></p>
+            {% else %}
+                <p><a href="{{ url_for('login') }}">Login</a></p>
+                <p><a href="{{ url_for('registration') }}">Register</a></p>
+            {% endif %}
+            <p><a href="{{ url_for('leaderboard') }}">Leaderboard</a></p>
+        </header>
+
+        <figure>
+            <img src="{{url_for('static', filename = 'instructions.png')}}" alt="Creepy smiling man" />
+        </figure>
+        <p id="again"><a href="{{ url_for('labyrinth') }}">Play</a></p>
+        <h1 id="again">CHEATS:</h1>
+        <p id="again">Press "q" to be able to go through obstacles</p>
+        <p id="again">Press "w" to get full vision</p>
+        <p id="again">Press "e" to get immortality</p>
+    </body>
+
+</html>

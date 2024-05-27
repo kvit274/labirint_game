@@ -1,0 +1,34 @@
+<!DOCTYPE html>                 
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Darkness</title>
+        <link href="{{ url_for ('static', filename = 'labyrinth.css') }}" rel="stylesheet"/>
+        <script src="{{ url_for('static', filename = 'labyrinth.js') }}" type="module"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="{{ url_for('index') }}">Darkness</a></h1>
+            {% if g.user %}
+                <p>Hi, {{ g.user }}</p>
+                <p><a href="{{ url_for('logout') }}">Logout</a></p>
+            {% else %}
+                <p><a href="{{ url_for('login') }}">Login</a></p>
+                <p><a href="{{ url_for('registration') }}">Register</a></p>
+            {% endif %}
+            <p><a href="{{ url_for('leaderboard') }}">Leaderboard</a></p>
+        </header>
+
+        <canvas width="640" height="480"></canvas>
+
+        <p id="timer"></p>
+
+        <section >
+            <p id="again"><a href="{{ url_for('labyrinth') }}">Play Again</a></p>
+        </section>
+
+    </body>
+
+</html>

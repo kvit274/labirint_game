@@ -1,0 +1,72 @@
+:root {
+    font-size: 100%;
+    --main-font-family: 'Ariel'; 
+    --main-bg-color: black;
+    --nav-text-color: rgb(102, 57, 8);
+    --nav-bg-color: rgb(198, 116, 49);
+    --login-bg-color: rgb(239, 214, 204);
+    --index-bg-color: rgb(239, 214, 204);
+}
+
+canvas{
+    background-color: black;
+    margin: 1em auto;
+    display: block;
+}
+
+#timer,  #again{
+    margin: 1em 30em;
+    padding: 1em 0em;
+    text-align: center;
+    color: var(--nav-text-color);
+    background-color: var(--nav-bg-color);
+
+}
+
+table   {
+    border-collapse: collapse;
+    margin: 2em auto;
+}
+
+th,td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+
+}
+
+header p{
+    margin: auto;
+}
+
+header h1{
+    
+    margin: 0.5em 0.5em 0.5em 0.5em; 
+
+}
+
+header a, #again a{
+    text-decoration: none;
+}
+
+header a:link ,  #again a:link{ 
+    color: var(--nav-text-color);
+}
+            
+header a:visited ,  #again a:visited {
+    color: var(--nav-text-color);
+}
+            
+header a:hover  ,  #again a:hover{
+    color: var(--nav-text-color);
+}
+            
+header a:active  ,  #again a:active{
+    color: var(--nav-text-color);
+}

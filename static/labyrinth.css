@@ -1,0 +1,125 @@
+:root{
+    font-size: 100%;
+    --main-font-family: 'Ariel'; 
+    --main-bg-color: black;
+    --nav-text-color: rgb(229, 150, 31);
+    --nav-bg-color: rgb(64, 22, 126);
+    --login-bg-color: rgb(239, 214, 204);
+    --index-bg-color: rgb(239, 214, 204);
+}
+figure{
+    text-align: center;
+}
+
+img{
+
+    width: 60%;
+}
+
+h1, a{
+    text-align: center;
+}
+
+html{
+    color: white;
+    background-color: black;
+}
+
+canvas{
+    border: 1px  solid var(--nav-bg-color);
+    margin: 1em auto;
+    display: block;
+}
+
+#timer,  #again{
+    font-size: 1.2em;
+    margin: 1em 30em;
+    padding: 0.5em 0em;
+    text-align: center;
+    color: var(--nav-text-color);
+    background-color: var(--nav-bg-color);
+
+}
+
+table{
+    border-collapse: collapse;
+    background-color: var(--nav-bg-color);
+    margin: 2em auto;
+}
+
+th,td{
+    border: 1px solid black;
+    color: var(--nav-text-color);
+    text-align: center;
+}
+
+header{
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+
+}
+
+header p{
+    margin: auto;
+}
+
+header h1{
+    
+    margin: 0.5em 0.5em 0.5em 0.5em; 
+
+}
+
+header a, #again a{
+    text-decoration: none;
+}
+
+header a:link ,  #again a:link{ 
+    color: var(--nav-text-color);
+}
+            
+header a:visited ,  #again a:visited{
+    color: var(--nav-text-color);
+}
+            
+header a:hover  ,  #again a:hover{
+    color: var(--nav-text-color);
+}
+            
+header a:active  ,  #again a:active{
+    color: var(--nav-text-color);
+}
+
+
+#login section{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+    
+}
+
+#login section h1{
+    margin-right: 1em;
+}
+
+#login form{
+    margin: 10em 20em;
+    padding: 2em;
+    text-align: center;
+    background-color:var(--nav-bg-color);
+    color: var(--nav-text-color);
+
+}
+
+table caption{
+    color: var(--nav-text-color);
+    margin-bottom: 1.5em;
+    background-color: var(--nav-bg-color);
+}
+
+h1{
+    color: var(--nav-text-color);
+}

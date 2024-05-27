@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <section id="leaderboard">
+        {% if leaderboard %}
+            <table>
+                <caption>Leaderboard</caption>
+                <th>Username</th>
+                <th >Time</th>
+                {% for player in leaderboard %}
+
+                    <tr>
+                        <td>{{ player["user_id"] }}</td>
+                        <td >{{ player["score"] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <h1 id="main">No players have won yet</h1>
+
+        {% endif %}
+    </section>
+
+
+
+
+{% endblock %}
